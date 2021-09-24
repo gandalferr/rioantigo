@@ -1,0 +1,24 @@
+Inclusao    de Professor       - INSERT
+Consulta    de Professor       - SELECT <campo, campo, ...> 
+                                 FROM <tabela>
+                                 WHERE matricula = <matricula>
+Atualização de Professor       - SELECT <campo, campo, ...> 
+                                 FROM <tabela>
+                                 WHERE matricula = <matricula>
+                                 /
+                                 UPDATE <tabela> SET <campo> = <valor novo> WHERE matricula = <matricula>
+Exclusão    de Professor       - DELETE <tabela> WHERE matricula = <matricula>
+Lista       de Professor       - SELECT *
+                                 FROM <tabela>
+-------------------------------------------------------
+Inclusao    de Aluno           - INSERT
+Consulta    de Aluno           - SELECT WHERE
+Atualização de Aluno           - SELECT WHERE / UPDATE
+Exclusão    de Aluno           - DELETE WHERE
+Lista       de Aluno           - SELECT
+-------------------------------------------------------
+Inclusao    de Turma           - INSERT
+Consulta    de Turma           - SELECT WHERE
+Atualização de Turma           - SELECT WHERE / UPDATE
+Exclusão    de Turma           - DELETE WHERE
+Lista       de Turma           - SELECT
