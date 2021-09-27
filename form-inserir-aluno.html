@@ -1,0 +1,43 @@
+<!DOCType html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Inserir Aluno</title>        
+    </head>
+    <body>
+        <header>
+            <h1>Inserir Aluno</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="form-inserir-aluno.html">Inserir Aluno</a></li>
+                    <li>Listar Alunos</li>
+                </ul>
+
+        </header>
+        <main>
+            <div>
+                <form name="formInserirAluno" method="POST" action="inserir-aluno.php">
+                    <fieldset>
+                        <label for="nomeAluno">Nome</label>
+                        <input type="text" name="nomeAluno" id="iNomeAluno" maxlength="50" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="matriculaAluno">Matrícula</label>
+                        <input type="number" name="matriculaAluno" id="iMatriculaAluno" maxlength="11" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="turmaAluno">Turma:</label>
+                        <input type="text" name="turmaAluno" id="iTurmaAluno" maxlength="3" required>
+                    </fieldset>
+                    <fieldset>
+                        <input type="submit" name="btEnviar" id="iBtEnviar" value="ENVIAR"> <br>
+                        <input type="reset"  name="btLimpar" id="iBtLimpar" value="LIMPAR">
+                    </fieldset>                                        
+                </form>
+            </div>
+
+        </main>
+            
+    </body>
+</html>
