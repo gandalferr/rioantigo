@@ -1,8 +1,9 @@
 <?php
 
-include "acesso_bd/carregarListaProfessores.php";
+include "../acesso_bd/carregarListaProfessores.php";
 
 $matriculaProfessor = $_GET['matricula'];
+
 
 /* abre conexao com banco de dados */
 $conexao = conectarBD();
@@ -49,15 +50,21 @@ desconectarBD($conexao);
                                     $matricula = $professor["matricula"];
                                     $nome = $professor["nome"]; 
                         ?>
-                            
+
+                                <input type="text"
+                                       id="idMatriculaProfessor" 
+                                       name="matriculaProfessor" 
+                                       value="<?=$matricula?>"
+                                       readonly>
+<!--
                             <div>
                                 <input type="text"
                                     id="idMatriculaProfessor" 
                                     name="matriculaProfessor" 
-                                    disabled 
-                                    value="<?=$matricula?>">
+                                    readonly 
+                                    value="<-?=$matricula?>">
                             </div>
-
+                                -->
                             <div class="label">
                                 <label for="idNomeProfessor">Nome do Professor</label>
                             </div>
