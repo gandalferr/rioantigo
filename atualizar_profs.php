@@ -1,13 +1,15 @@
 <?php
-    $matProf = $_POST['matricula'];
 
-    $conexao = conectarBD();
+include "acesso_bd/carregarListaProfessores.php";
 
-    $professores = executarQuery($conexao, "SELECT * FROM professores WHERE matricula = $matProf");
+$matriculaProfessor = $_GET['matricula'];
 
-    desconectarBD($conexao);
+$conexao = conectarBD();
+
+$professores = executarQuery($conexao, "SELECT * FROM professores WHERE matricula = $matriculaProfessor");
+
+desconectarBD($conexao);
 ?>
-
 <DOCType html>
     <html lang="pt-br">
         <head>
